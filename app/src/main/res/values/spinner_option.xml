@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Type">
+        <item>Funded</item>
+        <item>DCS</item>
+        <item>PER</item>
+        <item>TR</item>
+    </string-array>
+    <string-array name="ColeteralType">
+        <item>Debt Securites</item>
+        <item>Cash</item>
+        <item>Listed Shares</item>
+        <item>Unlisted Shares</item>
+        <item>Soverign Guarantee</item>
+        <item>Non Collateral</item>
+    </string-array>
+    <string-array name="CounterpartyType">
+        <item>Soverign</item>
+        <item>PSE/Bank</item>
+        <item>Coporate</item>
+        <item>Retail</item>
+    </string-array>
+    <string-array name="Rating">
+        <item>AAA</item>
+        <item>AA+</item>
+        <item>AA</item>
+        <item>AA-</item>
+        <item>A+</item>
+        <item>A</item>
+        <item>A-</item>
+        <item>BBB+</item>
+        <item>BBB</item>
+        <item>BBB-</item>
+        <item>BB+</item>
+        <item>BB</item>
+        <item>BB-</item>
+        <item>B+</item>
+        <item>B</item>
+        <item>B-</item>
+        <item>CCC Below</item>
+        <item>Unrated</item>
+        <item>Unrated2</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background="#e0dfdf">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Amount In Million"
+        android:id="@+id/tvHead"
+        android:linksClickable="false"
+        android:gravity="center_vertical|right"
+        android:layout_marginTop="30dp"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:textColor="#494747"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:paddingLeft="10dp"
+        android:paddingBottom="15dp"
+        android:paddingRight="5dp"
+        android:layout_marginRight="35dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Total Capital"
+        android:id="@+id/tc"
+        android:linksClickable="false"
+        android:gravity="center_vertical|right"
+        android:layout_marginTop="54dp"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:textColor="#494747"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="15dp"
+        android:paddingRight="5dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/capitalIN"
+        android:inputType="numberDecimal"
+        android:gravity="center_vertical"
+        android:layout_alignBottom="@+id/tc"
+        android:layout_toRightOf="@+id/tc"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:outlineProvider="bounds" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Total RWA"
+        android:id="@+id/rwa"
+        android:linksClickable="false"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/rwaIN"
+        android:layout_toStartOf="@+id/rwaIN"
+        android:gravity="center_vertical|right"
+        android:padding="5dp"
+        android:layout_alignBottom="@+id/rwaIN"
+        android:textStyle="bold"
+        android:textSize="17dp"
+        android:layout_alignTop="@+id/rwaIN"
+        android:textAlignment="gravity"
+        android:textColor="#494747" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rwaIN"
+        android:inputType="numberDecimal"
+        android:layout_below="@+id/capitalIN"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/capitalIN"
+        android:layout_alignStart="@+id/capitalIN"
+        android:gravity="center_vertical" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="CAR"
+        android:id="@+id/car"
+        android:textSize="17dp"
+        android:textAlignment="gravity"
+        android:gravity="center_vertical|right"
+        android:textStyle="bold"
+        android:textColor="#494747"
+        android:layout_below="@+id/rwa"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/rwa"
+        android:layout_alignEnd="@+id/rwa"
+        android:paddingRight="5dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text=""
+        android:id="@+id/tvEq"
+        android:gravity="left"
+        android:layout_alignTop="@+id/car"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textIsSelectable="true"
+        android:outlineProvider="bounds"
+        android:layout_toEndOf="@+id/car"
+        android:layout_toRightOf="@+id/car"
+        android:textStyle="normal"
+        android:textSize="20dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:layout_above="@+id/btEq" />
+
+    <!--<EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/etEq"
+        android:gravity="center_vertical"
+        android:layout_alignTop="@+id/car"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/rwaIN"
+        android:layout_alignStart="@+id/rwaIN"
+        android:inputType="numberDecimal" />-->
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Advance"
+        android:id="@+id/btAd"
+        android:textColor="#fff"
+        android:textSize="17dp"
+        android:layout_below="@+id/btEq"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/design"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Compute"
+        android:id="@+id/btEq"
+        android:textSize="17dp"
+        android:textColor="#fff"
+        android:background="@drawable/design"
+        android:padding="5dp"
+        android:paddingTop="10dp"
+        android:layout_below="@+id/car"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clear All"
+        android:id="@+id/btClr"
+        android:textSize="17dp"
+        android:textColor="#fff"
+        android:background="@drawable/design"
+        android:padding="5dp"
+        android:layout_alignTop="@+id/btEq"
+        android:layout_toLeftOf="@+id/btEq"
+        android:layout_toStartOf="@+id/btEq"
+        android:layout_marginRight="10dp"
+        android:textAllCaps="false"/>
+
+</RelativeLayout>
